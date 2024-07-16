@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Profile from "./pages/Profile";
 import Signup from "./pages/Signup";
 import Signin from "./pages/Signin";
+import Navbar from "./components/Navbar";
 
 
 
@@ -11,7 +12,8 @@ function App() {
   return (
     <>
         <BrowserRouter>
-            <Routes>
+            <Navbar />
+            <Routes>          
                 <Route path="/" element={<Home />}></Route>
                 <Route path="/about" element={<About />}></Route>
                 <Route path="/profile" element={<Profile />}></Route>
